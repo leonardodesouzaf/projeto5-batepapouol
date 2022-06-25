@@ -9,10 +9,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Parrots</title>
+    <title>Bate-Papo UOL</title>
 </head>
 <body>
-   
+   <div class="top">
+       <img src="/images/logo 1.png" alt="">
+       <ion-icon name="people"></ion-icon>
+   </div>
+   <div class="messages">
+
+        <div class="status-message">
+            <div class="hour">(09:21:45) </div>
+            <div class="name"> João </div>
+            <div class="action-inout"> entra na sala...</div>
+        </div>
+        <div class="private-message">
+            <div class="hour">(09:21:45) </div>
+            <div class="name"> João </div>
+            <div class="message-to"> reservadamente para</div>
+            <div class="message-to-person"> Todos:</div>
+            <div class="message-sent"> Bão dia</div>
+        </div>
+        <div class="message">
+            <div class="hour">(09:21:45) </div>
+            <div class="name"> João </div>
+            <div class="message-to"> para</div>
+            <div class="message-to-person"> Todos:</div>
+            <div class="message-sent"> Bão dia</div>
+        </div>
+
+   </div>
+   <div class="bottom">
+        <input type="text" placeholder="Escreva aqui..." class="message-content">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+   </div>
+
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    <script src="scripts.js"></script>
 
 </body>

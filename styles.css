@@ -1,5 +1,119 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #eef9bf;
+    background-color: #F3F3F3;
 }
 
+.top{
+    height: 80px;
+    padding: 0px 22px;
+    box-sizing: border-box;
+    font-size: 42px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.bottom{
+    height: 80px;
+    padding: 0px 18px;
+    box-sizing: border-box;
+    font-size: 26px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    font-size: 26px;
+}
+
+.messages{
+    margin-top: 106px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-content{
+    border: none;
+    font-size: 18px;
+    width: 80%;
+    color: #000000;
+    outline: none;
+}
+
+.message-content::placeholder{
+    font-style: italic;
+    font-weight: 400;
+    color: #000000;
+}
+
+.status-message{
+    background-color: #DCDCDC;
+    height: 40px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.private-message{
+    background-color: #FFDEDE;
+    height: 40px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.message{
+    background-color: #FFFFFF;
+    height: 40px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.hour{
+    margin-right: 6px;
+    color: #AAAAAA;
+}
+
+.name{
+    margin-right: 6px;
+    font-weight: 700;
+}
+
+.action-inout{
+    font-weight: 400;
+}
+
+.message-to{
+    margin-right: 6px;
+}
+
+.message-to-person{
+    margin-right: 6px;
+    font-weight: 700;
+}
