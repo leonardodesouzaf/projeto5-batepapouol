@@ -37,10 +37,16 @@ body{
 }
 
 .messages{
-    margin-top: 106px;
+    margin: 106px 0px;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
+
+.new-messages{
+    height: 80px;
+}
+
 
 .message-content{
     border: none;
@@ -83,7 +89,7 @@ body{
 }
 
 .message{
-    background-color: #FFFFFF;
+    background-color: white;
     height: 40px;
     border-radius: 2px;
     display: flex;
@@ -93,6 +99,10 @@ body{
     box-sizing: border-box;
     font-size: 14px;
     margin-bottom: 4px;
+}
+
+.message-sent{
+    width: 80vw;
 }
 
 .hour{
