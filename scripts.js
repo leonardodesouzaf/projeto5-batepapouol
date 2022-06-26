@@ -45,7 +45,7 @@ function displayMessages(resposta){
             </div>
             `;
         }
-        if(data[i].type === "private_message"){
+        if(data[i].type === "private_message" && data[i].to === participantname){
             messagebox.innerHTML+= `
                 <div class="private-message">
                 <div class="hour">(${data[i].time}) </div>
@@ -72,11 +72,6 @@ function displayMessages(resposta){
     document.querySelector('.new-messages').scrollIntoView({block: "end", inline: "nearest", behavior: "smooth"});
 }
 
-document.addEventListener('keydown', function(){
-    if (event.keyCode === 13){
-        sendMessage
-    }
-});
 
 function sendMessage(){
     messagewrited = document.querySelector('.message-content').value;
