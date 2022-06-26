@@ -72,4 +72,26 @@ function displayMessages(resposta){
     document.querySelector('.new-messages').scrollIntoView({block: "end", inline: "nearest", behavior: "smooth"});
 }
 
+document.addEventListener('keydown', function(){
+    if (event.keyCode === 13){
+        sendMessage
+    }
+});
 
+function sendMessage(){
+    messagewrited = document.querySelector('.message-content').value;
+    messagetosend = {
+        from: participantname,
+        to: "Todos",
+        text: messagewrited,
+        type: "message"
+    }
+    postpromise = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', messagetosend);
+    postpromise.then(getMessages);
+    postpromise.catch(reloading);
+    document.querySelector('.message-content').value='';
+}
+
+function reloading(){
+    window.location.reload();
+}
