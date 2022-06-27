@@ -45,7 +45,7 @@ function displayMessages(resposta){
             </div>
             `;
         }
-        if(data[i].type === "private_message" && data[i].to === participantname){
+        if((data[i].type === "private_message" && data[i].to === participantname) || (data[i].type === "private_message" && data[i].from === participantname) || (data[i].type === "private_message" && data[i].to === "Todos")){
             messagebox.innerHTML+= `
                 <div class="private-message">
                 <div class="hour">(${data[i].time}) </div>
@@ -70,6 +70,8 @@ function displayMessages(resposta){
     }
     messagebox.innerHTML+=`<div class="new-messages"></div>`;
     document.querySelector('.new-messages').scrollIntoView({block: "end", inline: "nearest", behavior: "smooth"});
+
+ 
 }
 
 
